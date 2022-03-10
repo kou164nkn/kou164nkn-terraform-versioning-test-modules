@@ -12,7 +12,8 @@ locals {
 module "example-vpc" {
   source = "../"
 
-  vpc_name = "example-vpc-1"
-  vpc_cidr = "192.168.0.0/24"
-  tags     = local.tags
+  vpc_name           = "example-vpc-1"
+  vpc_cidr           = "192.168.0.0/24"
+  enable_dns_support = false
+  tags               = local.tags
 }

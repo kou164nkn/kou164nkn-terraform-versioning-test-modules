@@ -9,6 +9,12 @@ variable "vpc_name" {
   type        = string
 }
 
+variable "enable_dns_support" {
+  description = "The flag to enable dns support"
+  type        = bool
+  default     = true
+}
+
 variable "tags" {
   description = "A map of tags to add to VPC."
   type        = map(string)
