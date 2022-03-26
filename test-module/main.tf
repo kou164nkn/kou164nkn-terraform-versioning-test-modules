@@ -1,5 +1,5 @@
 locals {
-  module_version = "v0.2.0"
+  module_version = "v0.6.0"
 }
 
 resource "aws_vpc" "main" {
